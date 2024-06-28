@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("../assets/fonts/Nunito-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #0047be;
+  color: white;
+}
+
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+}
+
+h1 {
+  color: #222222;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  color: #222222;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+h3 {
+  color: #222222;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+h4 {
+  color: #222222;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover {
+  cursor: default;
+}
+
+img,
+h1,
+h2,
+h3,
+h4 {
+  user-select: none;
+}
+
+p,
+a,
+li {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-family: "Nunito", sans-serif;
+  font-weight: 100;
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+legend {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+label {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+section {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: clamp(1.8rem, 5vw, 4rem);
+    text-align: center;
+  }
+}

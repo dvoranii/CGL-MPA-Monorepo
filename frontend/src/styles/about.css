@@ -1,0 +1,21 @@
+.about-section {
+  margin-top: 10vw;
+}
+
+.deal-banner--wrapper {
+  width: 100%;
+  padding-top: 1.2rem;
+}
+
+.deal-banner {
+  width: 100%;
+}
+
+.about-section a,
+.about-section a:visited {
+  color: black;
+}
+
+.about-section a:hover {
+  font-weight: bold;
+}

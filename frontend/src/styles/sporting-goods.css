@@ -1,0 +1,168 @@
+.sporting-section {
+  padding-top: 20vh;
+}
+
+.hockey-banner--wrapper {
+  margin-top: 4.8rem;
+}
+.sporting-title--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+h1.sporting-title {
+  user-select: none;
+  padding-bottom: 1.2rem;
+  padding-top: 4.2rem;
+  background-image: linear-gradient(to right, #8fd6ab, #0047be);
+  background-repeat: no-repeat;
+  background-size: 98% 3px;
+  background-position: bottom;
+  margin-bottom: 2.4rem;
+  width: fit-content;
+}
+.years-wrapper {
+  user-select: none;
+  margin-bottom: 3.2rem;
+  padding: 2.4rem 0 2.4rem 0;
+  background: linear-gradient(
+    to bottom,
+    rgb(184, 184, 184),
+    rgba(184, 184, 184, 0)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.4rem;
+}
+.years-wrapper img {
+  width: 170px;
+  height: auto;
+  margin: 20px;
+}
+.years-wrapper h3 {
+  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  padding: 0 2.4rem;
+}
+
+.sporting-intro--paragraph {
+  text-align: center;
+}
+
+.hockey-banner--wrapper {
+  height: 28vw;
+  background: url(../assets/images/hockey-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  place-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.hockey-banner--wrapper img {
+  grid-column: 1;
+  width: 70%;
+}
+.hockey-banner--wrapper h2 {
+  font-weight: 700;
+  font-style: italic;
+  padding-top: 2.4rem;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.178);
+  color: #0141b0;
+}
+
+.hockey-banner--wrapper p {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+.hockey-banner--wrapper h2,
+.hockey-banner--wrapper p {
+  grid-column: 1;
+}
+
+@media screen and (max-width: 1366px) {
+  .sporting-section {
+    padding-top: 10vh;
+  }
+  .hockey-banner--wrapper h2,
+  .hockey-banner--wrapper p {
+    padding-left: 2.4rem;
+  }
+
+  .hockey-banner--wrapper h2 {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 938px) {
+  .hockey-banner--wrapper h2 {
+    font-size: 2.4rem;
+    padding-top: 0;
+  }
+
+  .hockey-banner--wrapper p {
+    font-size: 1.4rem;
+  }
+
+  .hockey-banner--wrapper img {
+    margin-left: 0;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .hockey-banner--wrapper {
+    height: 34vw;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.285)),
+      url(../assets/images/hockey-banner.jpg);
+    background-position: -390px;
+  }
+
+  .hockey-banner--wrapper h2,
+  .hockey-banner--wrapper p {
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    grid-column: span 2;
+    text-align: center;
+  }
+  .hockey-banner--wrapper h2 {
+    font-size: 2.4rem;
+  }
+  .hockey-banner--wrapper p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .hockey-banner--wrapper img,
+  .hockey-banner--wrapper p,
+  .hockey-banner--wrapper h2 {
+    grid-column: span 2;
+  }
+
+  .years-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .hockey-banner--wrapper img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .hockey-banner--wrapper {
+    height: 53vw;
+    background-position: -520px;
+  }
+
+  .hockey-banner--wrapper h2 {
+    font-size: 1.8rem;
+  }
+}
